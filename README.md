@@ -1,11 +1,11 @@
 # debian_ssh
 
-An ssh-enabled base image for Debian
+An ssh-enabled base image for Debian:buster
 
 ### Building the image:
 
 ```bash
-> docker build -t goodsy/debian_ssh:18.04 .
+> docker build -t goodsy/debian_ssh:buster .
 ```
 
 ### Running:
@@ -14,7 +14,7 @@ The image exposes port 22 by default in the resulting container.
 You could stipulate to map the host to the same port on the machine (i.e. `'-p 22:22'`), but I prefer to keep it random.
 
 ```bash
-> docker run -d -P --name pg_debian_ssh goodsy/debian_ssh:18.04
+> docker run -d -P --name pg_debian_ssh goodsy/debian_ssh:buster
 ```
 
 ### SSH method 1 (password method)
