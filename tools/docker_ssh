@@ -1,0 +1,3 @@
+# ssh without saving this container as a known host
+# (otherwise you will get an error next time when the container is different)
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p [port-number]

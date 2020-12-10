@@ -1,0 +1,2 @@
+docker container stop pg_debian_ssh
+echo "y" | docker container prune

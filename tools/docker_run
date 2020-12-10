@@ -1,0 +1,1 @@
+docker run -d -P --name pg_debian_ssh debian_ssh
